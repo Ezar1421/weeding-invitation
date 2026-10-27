@@ -1,0 +1,39 @@
+/* STYLING KHUSUS HALAMAN COVER (index.html) */
+.welcome-cover {
+    min-height: 100vh;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #e6d0af; /* Warna Krem Kertas */
+}
+
+/* Memastikan tombol bisa ditekan dan tidak tertutup layer lain */
+.btn-buka {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    background-color: #4b281b;
+    color: #f5e6d3;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn-buka:hover {
+    background-color: #3a1f14;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-buka:active {
+    transform: translateY(0);
+}

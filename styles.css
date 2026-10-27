@@ -1,0 +1,500 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    background-color: #3a2214; /* Cokelat Tua Luar */
+    color: #4b281b;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* FONT NAMA MEMPELAI */
+.Nama, .mempelaiPria, .mempelaiWanita, .nama-pasangan {
+    font-family: 'Alex Brush', cursive, Georgia, serif !important;
+    font-weight: normal;
+    color: #3a1f14;
+    letter-spacing: 1px;
+}
+
+/* BUNGKUS KARTU KREM UTAMA */
+.section-halaman {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: #e6d0af; /* Warna Krem Kertas */
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden; /* Mencegah ornamen bocor keluar */
+}
+
+/* HALAMAN 1: MAIN COVER / MENU UTAMA */
+.main-cover {
+    min-height: 100vh;
+    padding: 30px 15px 40px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Menyusun dari atas secara teratur */
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    gap: 10px; /* Jarak pas antar elemen */
+}
+
+.Judul {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+.gunungan {
+    width: 130px;
+    height: auto;
+    margin: 5px 0;
+}
+
+.Nama {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* CAROUSEL PAS DI TENGAH BACKGROUND KREM */
+#carouselExampleIndicators {
+    width: 100%;
+    max-width: 260px; /* Lebar dibatasi agar tidak meluber */
+    margin: 10px auto !important;
+}
+
+.carousel-inner img {
+    height: 300px !important; /* Tinggi pas untuk foto berdiri */
+    object-fit: contain !important; /* Foto utuh dari kepala sampai bawah */
+    background-color: transparent; 
+    border-radius: 10px;
+}
+
+.carousel-indicators {
+    bottom: -25px; 
+}
+
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    border: none !important;
+    margin: 0 4px !important;
+    opacity: 1 !important;
+}
+
+.carousel-indicators .active {
+    background-color: #4b281b !important;
+}
+
+.carousel-indicators button:not(.active) {
+    background-color: #bfa486 !important;
+}
+
+/* WRAPPER & TOMBOL MENU NAVIGASI */
+.menu-navigasi {
+    width: 80%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px; /* Jarak dari titik carousel */
+}
+
+.btn-menu {
+    background-color: #4b281b;
+    color: #f5e6d3;
+    border: 2px solid #3a1f14;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.btn-menu:hover {
+    background-color: #3a1f14;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-menu:active {
+    transform: translateY(0);
+}
+
+/* HALAMAN 2: ISI UNDANGAN */
+.isi-undangan {
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 3px dashed #7c6f59;
+}
+
+.Bismillah {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.textSalam {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.textPembuka {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.mempelaiPria, .mempelaiWanita {
+    font-size: 3rem;
+    margin: 15px 0;
+}
+
+.putra, .putri {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.judul-acara {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tanggal-acara {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.teks-keterangan {
+    margin: 5px 0;
+}
+
+.bunga1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.bunga2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* HALAMAN 3: ACARA & WAYANG */
+.Isi2 {
+    min-height: 100vh;
+    padding: 50px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px dashed #7c6f59;
+}
+
+.teksNgunduhMantu, .textPenutup {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.kotak-acara {
+    margin: 10px 0 20px 0;
+}
+
+.judul-sesi {
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.tanggal-resepsi {
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin: 5px 0;
+}
+
+.waktu-resepsi {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+.nama-gedung {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.alamat-gedung {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.SalamPenutup {
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.label-keluarga {
+    margin-bottom: 10px;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.keluarga-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.keluarga-pria, .keluarga-wanita {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.nama-pasangan {
+    font-size: 3.5rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* COUNTDOWN TIMER */
+.judul-countdown {
+    font-family: 'Georgia', serif;
+    color: #4b281b;
+    margin-bottom: 15px;
+}
+
+.box-timer {
+    background-color: #f5e6d3; /* Warna latar dalam kotak */
+    border: 2px solid #4b281b; /* Garis pinggir cokelat tua khas klasik */
+    border-radius: 8px;
+    padding: 8px 12px;
+    min-width: 65px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.box-timer span {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #3a1f14;
+    line-height: 1.2;
+}
+
+.box-timer small {
+    font-size: 0.75rem;
+    color: #4b281b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* AREA WAYANG & AWAN DEKORASI */
+.Wayang-Wrapper {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+.Wayang {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+}
+
+.Rama {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+
+.Shinta {
+    width: 196px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.cloud-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.cloud-back-layer {
+    z-index: 1;
+    transform: translateY(-8px);
+    opacity: 0.85;
+}
+
+.cloud-back-layer .gumpalan {
+    background-color: #26160e;
+}
+
+.gumpalan {
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.g1 { width: 130px; height: 130px; bottom: -40px; left: -30px; }
+.g2 { width: 150px; height: 150px; bottom: -50px; left: 50px; }
+.g5 { width: 110px; height: 110px; bottom: -40px; left: 170px; }
+.g6 { width: 130px; height: 130px; bottom: -45px; left: 250px; }
+.g7 { width: 110px; height: 110px; bottom: -40px; right: 170px; }
+.g3 { width: 140px; height: 140px; bottom: -45px; right: 50px; }
+.g4 { width: 130px; height: 130px; bottom: -40px; right: -30px; }
+
+.bg1 { width: 140px; height: 140px; bottom: -30px; left: -10px; }
+.bg2 { width: 160px; height: 160px; bottom: -40px; left: 90px; }
+.bg3 { width: 150px; height: 150px; bottom: -35px; right: 90px; }
+.bg4 { width: 140px; height: 140px; bottom: -30px; right: -10px; }
+
+.base-dark {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: black;
+}
+
+/* HALAMAN 4: LOKASI PETA */
+.Map {
+    min-height: 80vh;
+    padding: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 3px dashed #7c6f59;
+}
+
+.Lokasi {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 450px;
+    margin: 10px auto 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #4b281b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 250px;
+    display: block;
+    border: none;
+}
+
+.button-map {
+    display: inline-block;
+    background-color: #4b281b;
+    color: #f5e6d3;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    transition: background 0.3s;
+}
+
+.button-map:hover {
+    background-color: #3a1f14;
+    color: #ffffff;
+}
+
+.propertipenutup {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    padding-bottom: 70px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.wayangkiri, .gunungankanan {
+    z-index: 2;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.gunungan2 {
+    width: 160px;
+    height: auto;
+    margin-bottom: -10px;
+    filter: brightness(0.7) contrast(1.2);
+}
+
+.rama-shinta {
+    width: 190px;
+    height: auto;
+    margin-bottom: -25px;
+    filter: brightness(0.9);
+    z-index: 2;
+}
+
+/* RESPONSIVE UNTUK HP */
+@media screen and (max-width: 768px) {
+    .container, .isi-undangan, .Isi2, .Map {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .kotaktamu {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .Nama {
+        font-size: 2.5rem;
+    }
+}
